@@ -1,0 +1,9 @@
+enum DAY {
+    MONDAY,
+    TUESDAY,
+    THURSDAY,
+    WEDNESDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY
+}
