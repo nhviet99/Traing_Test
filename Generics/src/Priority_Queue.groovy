@@ -11,8 +11,9 @@ class Priority_Queue<T> {
         this.phead = phead
     }
 
-    public void Insert(Nodes<T> node)
+    public void Insert(int priority, T data)
     {
+        Nodes<T> node = new Nodes<T>(priority, data);
         if(phead==null)
         {
             setPhead(node);
@@ -23,8 +24,8 @@ class Priority_Queue<T> {
             Nodes<T> curr= phead;
             while(curr!=null)
             {
-                curr.getProperty();
-                if(curr.getProperty()<=node.getProperty())
+
+                if(curr.getPriority()<=node.getPriority())
                 {
                     curr=curr.getPright();
                 }
